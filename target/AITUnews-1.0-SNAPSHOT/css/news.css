@@ -1,0 +1,29 @@
+.content{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+.block{
+    margin-top: 20px;
+    border-radius: 50px;
+    display: block;
+    background: url("https://image.freepik.com/free-vector/blue-technology-background-with-hexagonal-glowing_1017-20584.jpg") no-repeat;
+    background-size: cover;
+    border: 3px solid #0950e8;
+}
+.a-header{
+    font-weight: bold;
+    color: #bcc9e6;
+}
+.article{
+    width: 90%;
+    padding-left: 30px;
+}
+.a-author{
+    padding-right: 30px;
+    text-align: end;
+}
+hr{
+    height: 3px;
+    background-color: #e0ed68;
+}
