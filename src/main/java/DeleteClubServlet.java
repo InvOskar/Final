@@ -22,7 +22,7 @@ public class DeleteClubServlet extends HttpServlet {
             String name=req.getParameter("name");
             PreparedStatement pst=con.prepareStatement("delete from clubs where Name=?");
             pst.setString(1,name);
-            RequestDispatcher rd = req.getRequestDispatcher("editClubs.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("adminPanel.jsp");
             rd.include(req, res);
             pst.executeUpdate();
         } catch(Exception e) {

@@ -156,9 +156,9 @@
     for (int i=0; i<n; i++) {
         clubsArrayList.add(clubsArray[i]);
         out.println("<div class='clubs'><div style='padding-top=40%'><center><h3 style='font-weight:bold; font-size: 25px;'>"+
-                clubsArrayList.get(clubsArrayList.size() - 1).getClub_name()+"</h3></center></div>" +
+                clubsArrayList.get(i).getClub_name()+"</h3></center></div>" +
                 "<div><form method='post' action='ClubServlet'><input type='hidden' name='club_name' value='" +
-                clubsArrayList.get(clubsArrayList.size() - 1).getClub_name() +"'><button type='submit' class='btn btn-primary btn-ghost'><span>Details</span></button></form></div></div>");
+                clubsArrayList.get(i).getClub_name() +"'><button type='submit' class='btn btn-primary btn-ghost'><span>Details</span></button></form></div></div>");
     }
 %>
 </div></center>

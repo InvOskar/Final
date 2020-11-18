@@ -14,7 +14,7 @@ public class EditClubsServlet extends HttpServlet {
             String name=req.getParameter("name");
             String newName=req.getParameter("newName");
             PreparedStatement pst=con.prepareStatement("UPDATE clubs SET Name = '"+newName+"' WHERE Name = '"+name+"';");
-            RequestDispatcher rd = req.getRequestDispatcher("editClubs.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("adminPanel.jsp");
             rd.include(req, res);
             pst.executeUpdate();
         } catch(Exception e) {

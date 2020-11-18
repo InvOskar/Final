@@ -14,7 +14,7 @@
         }
     }
     HttpSession httpSession = request.getSession(true);
-    httpSession.removeAttribute("user");
+    httpSession.removeAttribute("username");
     httpSession.setMaxInactiveInterval(0);
     httpSession.invalidate();
     response.sendRedirect("index.jsp");

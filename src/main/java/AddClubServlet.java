@@ -13,7 +13,7 @@ public class AddClubServlet extends HttpServlet {
             Connection con = DBConnection.getCon();
             String name=req.getParameter("name");
             PreparedStatement pst=con.prepareStatement("insert into clubs(Name) values('"+name+"')");
-            RequestDispatcher rd = req.getRequestDispatcher("editClubs.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("adminPanel.jsp");
             rd.include(req, res);
             pst.executeUpdate();
         } catch(Exception e) {
