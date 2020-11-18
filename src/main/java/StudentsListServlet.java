@@ -14,7 +14,8 @@ public class StudentsListServlet extends GenericServlet{
             ResultSet rs = ps.executeQuery();
             RequestDispatcher rd = req.getRequestDispatcher("students.jsp");
             rd.include(req, res);
-            pw.println("<div><center><h1 style='color: white; font-size: 40px; font-family: 'Raleway', sans-serif;'>Students list</h1></center>");
+            pw.println("<div><center><h1 style='color: white; font-size: 40px; font-family: 'Raleway', sans-serif;'>Students list</h1></center>" +
+                    "<center><a href=\"myPage.jsp\"><button class='btn btn-primary btn-ghost'><span>My page</span></button></a></center><br><br><br>");
             //Searchers
             pw.println("<center><div class='search-box'>" +
                     "<div class='search-columns'><div><a id='show_all' href='StudentsListServlet'>Show all</a></div></div>"+

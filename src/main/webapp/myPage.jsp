@@ -67,18 +67,20 @@
             String major = rs.getString(5);
             String group = rs.getString(6);
             String year = rs.getString(7);
+            int numberOfBooks= (int) session.getAttribute("numberOfItems");
             pw.println("<center><div class='user'><div><center><h3 style='font-weight:bold; font-size: 30px;'>"+username+"</h3></center></div><div class='info'><div><ul>"+
                     "<li>Name: </li>" +
                     "<li>Surname: </li>" +
                     "<li>Major: </li>" +
                     "<li>Group: </li>" +
                     "<li>Year: </li>" +
+                    "<li>Borrowed books: </li>" +
                     "</ul></div>");
             pw.println("<div><ul><li>"+name+"</li>");
             pw.println("<li>"+surname+"</li>");
             pw.println("<li>"+major+"</li>");
             pw.println("<li>"+group+"</li>");
-            pw.println("<li>"+year+"</li></ul></div></div></div>");
+            pw.println("<li>"+year+"</li><li>"+numberOfBooks+"</li></ul></div></div></div>");
         }
         pw.println("</div></center>");
     } catch(Exception e) {

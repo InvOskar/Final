@@ -202,9 +202,9 @@
                 <span class="links__text">Students</span></a>
         </li>
         <li class="links__item" style="--item-count:6">
-            <a class="links__link" href="myPage.jsp">
-                <img class="links__icon" src="https://www.epicentrofestival.com/wp-content/uploads/2019/11/Computer-Icons-User-Profile-Avatar-Scalable-Vector-My-Services-Svg-Png-Icon-Free-Download.jpg">
-                <span class="links__text">My page</span></a>
+            <a class="links__link" href="books.jsp">
+                <img class="links__icon" src="https://www.flaticon.com/svg/static/icons/svg/29/29302.svg">
+                <span class="links__text">Library</span></a>
         </li>
     </ul>
 </div>
