@@ -1,3 +1,1 @@
-"# Final" 
-"# Final" 
-"# Final" 
+Final project ADJ #1.
